@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+     integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="music_player">
+        <div class="header">
+            <button><i class="fas fa-long-arrow-alt-left"></i></button>
+            <span>Playing Now</span>
+            <button><i class="fas fa-bars"></i></button>
+        </div>
+        <div class="cover">
+            <div class="cover_img"></div>
+        </div>
+        <div class="title">
+            <span class="music_name">Cheshm Ahoo</span>
+            <span class="singer">Farzad Farokh</span>
+        </div>
+        <div class="timeline_numbers">
+            <span class="current_time">0.00</span>
+            <span class="duration">0.00</span>
+        </div>
+        <div class="timeline">
+            <div class="music_timeline">
+                <span class="circle"></span>
+            </div>
+        </div>
+        <div class="buttons">
+            <audio src="music/farzadfarokh.mp3" title="farzadfarokh" class="music"></audio>
+            <button class="prev"><i class="fas fa-angle-double-left"></i></button>
+            <button class="play_pause"><i class="fas fa-play"></i></button>
+            <!-- <i class="fas fa-pause"></i> -->
+            <button class="next"><i class="fas fa-angle-double-right"></i></button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
